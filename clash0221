@@ -419,6 +419,7 @@ rules:
   - 'DOMAIN-KEYWORD,woxav.com,ChatGPT,no-resolve'
   - 'DOMAIN-KEYWORD,sehuatang.net,ChatGPT,no-resolve'
   - 'DOMAIN-KEYWORD,91porn.com,ChatGPT,no-resolve'
+  - 'DOMAIN-KEYWORD,91selfie,ChatGPT,no-resolve'
   - 'IP-CIDR,8.8.4.4/32,节点选择,no-resolve'
   - 'IP-CIDR,8.8.8.8/32,节点选择,no-resolve'
   - 'IP-CIDR,104.16.249.249/32,节点选择,no-resolve'
