@@ -221,14 +221,9 @@ proxy-groups:
 
   - name: ChatGPT
     type: select
-    proxies:
-      - 节点选择
-      - 自动选择
-      - 故障转移
-      - 负载均衡
+    # ChatGPT 专用机场：仅使用机场 A 的节点
     use:
       - airport_a
-      - airport_b
 
   - name: 海外使用
     type: select
@@ -398,8 +393,31 @@ rule-providers:
     interval: 86400
     proxy: 节点选择
 rules:
-  - 'DOMAIN-KEYWORD,woxav.com,节点选择'
-  - 'DOMAIN-KEYWORD,sehuatang.net,节点选择'
+  - 'IP-CIDR,104.16.248.249/32,节点选择,no-resolve'
+  - 'IP-CIDR,104.16.249.249/32,节点选择,no-resolve'
+  - 'IP-CIDR,8.8.8.8/32,节点选择,no-resolve'
+  - 'IP-CIDR,8.8.4.4/32,节点选择,no-resolve'
+  - 'DOMAIN-KEYWORD,kkys01.com,DIRECT'   
+  - 'DOMAIN-KEYWORD,fengbao,DIRECT' 
+  - 'DOMAIN-KEYWORD,ymuuy.com,DIRECT'
+  - 'DOMAIN-KEYWORD,bofang.com,DIRECT' 
+  - 'DOMAIN-KEYWORD,jisuts.com,DIRECT'
+  - 'DOMAIN-KEYWORD,bofang.com,DIRECT' 
+  - 'DOMAIN-KEYWORD,0jtv2.com,DIRECT' 
+  - 'DOMAIN-KEYWORD,hhwenjian.com,DIRECT'
+  - 'DOMAIN-KEYWORD,xlzyd.com,DIRECT'
+  - 'DOMAIN-KEYWORD,ajupf.com,DIRECT' 
+  - 'DOMAIN-KEYWORD,tscjzy.com,DIRECT' 
+  - 'DOMAIN-KEYWORD,plays.com,DIRECT'
+  - 'DOMAIN-KEYWORD,phimgood.com,DIRECT'  
+  - 'DOMAIN-KEYWORD,kapok,节点选择,no-resolve'
+  - 'DOMAIN-SUFFIX,gofundme.com,节点选择,no-resolve'
+  - 'DOMAIN-SUFFIX,xchina.co,节点选择,no-resolve'
+  - 'DOMAIN-SUFFIX,cn.javd.me,节点选择,no-resolve'
+  - 'DST-PORT,11302,DIRECT' #匹配数据目标端口(直连)
+  - 'DST-PORT,11301,DIRECT'
+  - 'DOMAIN-SUFFIX,woxav.com,ChatGPT,no-resolve'
+  - 'DOMAIN-SUFFIX,sehuatang.net,ChatGPT,no-resolve'
   - 'IP-CIDR,8.8.4.4/32,节点选择,no-resolve'
   - 'IP-CIDR,8.8.8.8/32,节点选择,no-resolve'
   - 'IP-CIDR,104.16.249.249/32,节点选择,no-resolve'
