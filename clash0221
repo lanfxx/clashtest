@@ -418,6 +418,7 @@ rules:
   - 'DST-PORT,11301,DIRECT'
   - 'DOMAIN-SUFFIX,woxav.com,ChatGPT,no-resolve'
   - 'DOMAIN-SUFFIX,sehuatang.net,ChatGPT,no-resolve'
+  - 'DOMAIN-SUFFIX,91porn.com,ChatGPT,no-resolve'
   - 'IP-CIDR,8.8.4.4/32,节点选择,no-resolve'
   - 'IP-CIDR,8.8.8.8/32,节点选择,no-resolve'
   - 'IP-CIDR,104.16.249.249/32,节点选择,no-resolve'
