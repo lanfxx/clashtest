@@ -411,9 +411,9 @@ rules:
   - 'DOMAIN-KEYWORD,plays.com,DIRECT'
   - 'DOMAIN-KEYWORD,phimgood.com,DIRECT'  
   - 'DOMAIN-KEYWORD,kapok,节点选择,no-resolve'
-  - 'DOMAIN-SUFFIX,gofundme.com,节点选择,no-resolve'
+  - 'DOMAIN-KEYWORD,gofundme.com,节点选择,no-resolve'
   - 'DOMAIN-KEYWORD,xchina,节点选择,no-resolve'
-  - 'DOMAIN-SUFFIX,cn.javd.me,节点选择,no-resolve'
+  - 'DOMAIN-KEYWORD,javd.me,节点选择,no-resolve'
   - 'DST-PORT,11302,DIRECT' #匹配数据目标端口(直连)
   - 'DST-PORT,11301,DIRECT'
   - 'DOMAIN-SUFFIX,woxav.com,ChatGPT,no-resolve'
