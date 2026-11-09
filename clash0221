@@ -418,6 +418,7 @@ rules:
   - 'DOMAIN-KEYWORD,ajupf.com,DIRECT' 
   - 'DOMAIN-KEYWORD,tscjzy.com,DIRECT' 
   - 'DOMAIN-KEYWORD,plays.com,DIRECT'
+  - 'DOMAIN-KEYWORD,feifei-play.com,DIRECT
   - 'DOMAIN-KEYWORD,phimgood.com,DIRECT'  
   - 'DOMAIN-KEYWORD,kapok,节点选择,no-resolve'
   - 'DOMAIN-KEYWORD,gofundme.com,节点选择,no-resolve'
