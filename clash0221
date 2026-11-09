@@ -130,9 +130,6 @@ dns:
     "geosite:cn":
       - "https://doh.pub/dns-query#DIRECT"
       - "https://dns.alidns.com/dns-query#DIRECT"
-  proxy-server-nameserver:
-  - tls://223.5.5.5:853
-  - tls://223.6.6.6:853
     # 海外域名：国外 DoH，通过海外使用代理组
     "geosite:geolocation-!cn":
       - "https://dns.google/dns-query#海外使用"
@@ -157,6 +154,9 @@ dns:
       - 'https://117.147.231.222:8443/dns-query'
       - 'https://111.31.95.15:8443/dns-query'
       - 'https://api.edgequery.net:40443/dns-query'
+  proxy-server-nameserver:
+      - tls://223.5.5.5:853
+      - tls://223.6.6.6:853
 # 双机场订阅：请将下面两个 url 替换为各自真实的 Mihomo/Clash 订阅地址后再启用配置。
 proxy-providers:
   airport_a:
