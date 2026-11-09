@@ -130,7 +130,9 @@ dns:
     "geosite:cn":
       - "https://doh.pub/dns-query#DIRECT"
       - "https://dns.alidns.com/dns-query#DIRECT"
-
+  proxy-server-nameserver:
+  - tls://223.5.5.5:853
+  - tls://223.6.6.6:853
     # 海外域名：国外 DoH，通过海外使用代理组
     "geosite:geolocation-!cn":
       - "https://dns.google/dns-query#海外使用"
