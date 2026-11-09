@@ -20,9 +20,8 @@ dns:
   listen: '127.0.0.1:1053'
   ipv6: false
   default-nameserver:
-    - 114.114.114.114
-    - 223.5.5.5
-    - 119.29.29.29
+    - tls://223.5.5.5:853
+    - tls://223.6.6.6:853
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
@@ -123,11 +122,19 @@ dns:
     - +.media.dssott.com
     - +.pvp.net
   nameserver:
-    - 'tls://223.5.5.5:853'
-    - 'tls://223.6.6.6:853'
-    - 'https://doh.pub/dns-query'
-    - 'https://dns.alidns.com/dns-query'
+    - "tls://223.5.5.5:853#DIRECT"
+    - "tls://223.6.6.6:853#DIRECT"
+    - "https://doh.pub/dns-query#DIRECT"
+    - "https://dns.alidns.com/dns-query#DIRECT"
   nameserver-policy:
+    "geosite:cn":
+      - "https://doh.pub/dns-query#DIRECT"
+      - "https://dns.alidns.com/dns-query#DIRECT"
+
+    # 海外域名：国外 DoH，通过海外使用代理组
+    "geosite:geolocation-!cn":
+      - "https://dns.google/dns-query#海外使用"
+      - "https://cloudflare-dns.com/dns-query#海外使用"
     +.o4xn36mn.com:
       - 'https://api.edgequery.cc:40443/dns-query'
       - 'https://117.147.231.222:8443/dns-query'
