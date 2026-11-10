@@ -407,6 +407,12 @@ rules:
   - 'IP-CIDR,8.8.8.8/32,节点选择,no-resolve'
   - 'IP-CIDR,8.8.4.4/32,节点选择,no-resolve'
   - 'DOMAIN-KEYWORD,kkys01.com,DIRECT' #可可影视播放链接直连
+  - 'DOMAIN-KEYWORD,kkys02.com,DIRECT'
+  - 'DOMAIN-KEYWORD,kkys03.com,DIRECT'
+  - 'DOMAIN-KEYWORD,kkys04.com,DIRECT'
+  - 'DOMAIN-KEYWORD,kkys05.com,DIRECT'
+  - 'DOMAIN-KEYWORD,kkys06.com,DIRECT'
+  - 'DOMAIN-KEYWORD,kkys07.com,DIRECT'
   - 'DOMAIN-KEYWORD,fengbao,DIRECT' 
   - 'DOMAIN-KEYWORD,ymuuy.com,DIRECT'
   - 'DOMAIN-KEYWORD,bofang.com,DIRECT' 
