@@ -423,7 +423,8 @@ rules:
   - 'DOMAIN-KEYWORD,kapok,节点选择,no-resolve'
   - 'DOMAIN-KEYWORD,gofundme.com,节点选择,no-resolve'
   - 'DOMAIN-KEYWORD,xchina,节点选择,no-resolve'
-  - 'DOMAIN-KEYWORD,javd.me,ChatGPT,no-resolve'
+  - 'DOMAIN-KEYWORD,javd.me,节点选择,no-resolve'
+  - 'DOMAIN-KEYWORD,dytt-kan.com,节点选择,no-resolve'
   - 'DST-PORT,11302,DIRECT' #匹配数据目标端口(直连)
   - 'DST-PORT,11301,DIRECT'
   - 'DOMAIN-KEYWORD,woxav.com,ChatGPT,no-resolve'
