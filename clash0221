@@ -406,7 +406,7 @@ rules:
   - 'IP-CIDR,104.16.249.249/32,节点选择,no-resolve'
   - 'IP-CIDR,8.8.8.8/32,节点选择,no-resolve'
   - 'IP-CIDR,8.8.4.4/32,节点选择,no-resolve'
-  - 'DOMAIN-KEYWORD,kkys01.com,DIRECT'   
+  - 'DOMAIN-KEYWORD,kkys01.com,DIRECT' #可可影视播放链接直连
   - 'DOMAIN-KEYWORD,fengbao,DIRECT' 
   - 'DOMAIN-KEYWORD,ymuuy.com,DIRECT'
   - 'DOMAIN-KEYWORD,bofang.com,DIRECT' 
@@ -419,12 +419,12 @@ rules:
   - 'DOMAIN-KEYWORD,tscjzy.com,DIRECT' 
   - 'DOMAIN-KEYWORD,plays.com,DIRECT'
   - 'DOMAIN-KEYWORD,feifei-play.com,DIRECT'
-  - 'DOMAIN-KEYWORD,phimgood.com,DIRECT'  
+  - 'DOMAIN-KEYWORD,phimgood.com,DIRECT'
+  - 'DOMAIN-KEYWORD,dytt-kan.com,DIRECT,no-resolve'
   - 'DOMAIN-KEYWORD,kapok,节点选择,no-resolve'
   - 'DOMAIN-KEYWORD,gofundme.com,节点选择,no-resolve'
   - 'DOMAIN-KEYWORD,xchina,节点选择,no-resolve'
   - 'DOMAIN-KEYWORD,javd.me,节点选择,no-resolve'
-  - 'DOMAIN-KEYWORD,dytt-kan.com,节点选择,no-resolve'
   - 'DST-PORT,11302,DIRECT' #匹配数据目标端口(直连)
   - 'DST-PORT,11301,DIRECT'
   - 'DOMAIN-KEYWORD,woxav.com,ChatGPT,no-resolve'
