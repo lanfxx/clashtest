@@ -216,7 +216,7 @@ proxy-groups:
       - airport_b
       - airport_a
     url: "https://www.gstatic.com/generate_204"
-    interval: 700
+    interval: 180
     lazy: true
 
   - name: 负载均衡
