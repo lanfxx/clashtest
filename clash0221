@@ -213,8 +213,8 @@ proxy-groups:
   - name: 故障转移
     type: fallback
     use:
-      - airport_a
       - airport_b
+      - airport_a
     url: "https://www.gstatic.com/generate_204"
     interval: 700
     lazy: true
